@@ -25,7 +25,7 @@ class Solution:
                     else:
                         n += 1
             sumofsubstrings += 1
-            startindex = startindex + m + 1
+            startindex = startindex + m - 1
         return sumofsubstrings
 
 print(Solution.lengthOfLongestSubstring(Solution,'xyz','z'))

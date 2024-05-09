@@ -7,7 +7,7 @@ class Solution:
         for i in range(len(input)):
             if input[i] == '(':
                 stack['('].append(i)
-                print(stack)
+        #print(stack)
             elif input[i] == ')':
                 if stack['(']:
                     stack['('].pop()

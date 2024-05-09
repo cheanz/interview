@@ -1,3 +1,4 @@
+
 class Solution:
     def lengthOfLongestSubstring(self, t: str, s: str) -> int:
         '''
@@ -17,11 +18,10 @@ class Solution:
         while startindex < reallength:
             n=0
             while m < maxlengthofsub and n < maxlengthofsub :
-                if startindex+m < reallength:
+                    if startindex+m >= reallength:
+                        break
                     if  s[startindex+m] == t[n]:
                         m += 1
-                        print(m)
-                        print(n)
                     else:
                         n += 1
             sumofsubstrings += 1
